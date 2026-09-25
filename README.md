@@ -97,7 +97,8 @@ cd ytlingo
 
 Страница доната: [DonatePay — виджет](https://widget.donatepay.ru/widgets/page/f37569d679fedd41e646b89ec8af4187d833a500fea8a9a299e21811fc28f216?widget_id=7879740&sum=200) (сумма по умолчанию 200 ₽)
 
-На GitHub также работает кнопка **Sponsor** в шапке репозитория — ссылка задаётся в [`.github/FUNDING.yml`](.github/FUNDING.yml).
+На GitHub также работает кнопка **Sponsor** в шапке репозитория — ссылка задаётся в [`.github/FUNDING.yml`](.github/FUNDING.yml).  
+Подробнее: [донаты и DonatePay API](docs/donations.md) (API-ключ для GitHub не нужен, только публичная ссылка).
 
 ## Лицензия
 
