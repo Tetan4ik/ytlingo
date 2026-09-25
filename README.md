@@ -2,7 +2,7 @@
 
 Расширение для **Google Chrome** и **Microsoft Edge** (Chromium): смотрите обучающие ролики на YouTube на иностранном языке и **понимайте речь в моменте** — оригинал и перевод прямо над видео, без отрыва от экрана.
 
-[Releases](https://github.com/Tetan4ik/ytlingo/releases) · [Сообщить о проблеме](https://github.com/Tetan4ik/ytlingo/issues)
+[Releases](https://github.com/Tetan4ik/ytlingo/releases) · [Сообщить о проблеме](https://github.com/Tetan4ik/ytlingo/issues) · [![Donate on DonatePay](https://img.shields.io/badge/Donate-DonatePay-7c3aed?style=flat-square)](https://new.donatepay.ru/@Tetan4ik)
 
 ![ytlingo на YouTube: оригинал, перевод и подсветка слова](docs/screenshot.jpg)
 
@@ -93,9 +93,11 @@ cd ytlingo
 
 ## Поддержать проект
 
-Кнопка **Sponsor** в шапке репозитория ([`.github/FUNDING.yml`](.github/FUNDING.yml)).
+[![Donate on DonatePay](https://img.shields.io/badge/Поддержать_проект-DonatePay-7c3aed?style=for-the-badge)](https://new.donatepay.ru/@Tetan4ik)
 
-**[Поддержать на DonatePay](https://widget.donatepay.ru/widgets/page/f37569d679fedd41e646b89ec8af4187d833a500fea8a9a299e21811fc28f216?widget_id=7879740&sum=200)**
+Публичная страница: **https://new.donatepay.ru/@Tetan4ik**
+
+На GitHub также работает кнопка **Sponsor** в шапке репозитория — ссылка задаётся в [`.github/FUNDING.yml`](.github/FUNDING.yml).
 
 ## Лицензия
 
