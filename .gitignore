@@ -1,0 +1,5 @@
+.idea/
+dist/
+*.zip
+.DS_Store
+Thumbs.db

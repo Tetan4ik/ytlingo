@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+<h3>
+    Мой словарь
+    <span class="count" id="count"></span>
+</h3>
+<label class="lines-setting">
+    Строк субтитров на экране
+    <select id="linesCount">
+        <option value="3">3</option>
+        <option value="5">5</option>
+        <option value="7">7</option>
+        <option value="9">9</option>
+        <option value="11">11</option>
+    </select>
+</label>
+<div id="list"></div>
+<div class="footer">
+    <button id="export">Экспорт CSV</button>
+    <button id="openWindow">В окне</button>
+    <button id="clear" class="danger">Очистить</button>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>
