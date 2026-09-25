@@ -121,6 +121,21 @@ h3 .count {
     background: #ffe5e5;
 }
 
+.donate-line {
+    margin: 10px 0 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.donate-line a {
+    color: #7c3aed;
+    text-decoration: none;
+}
+
+.donate-line a:hover {
+    text-decoration: underline;
+}
+
 body.window-mode {
     width: 100%;
     height: 100vh;
@@ -129,5 +144,5 @@ body.window-mode {
 }
 
 body.window-mode #list {
-    height: calc(100vh - 140px); /* растягиваем список на всё окно */
+    height: calc(100vh - 168px); /* растягиваем список на всё окно */
 }
