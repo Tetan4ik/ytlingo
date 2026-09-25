@@ -94,4 +94,4 @@ cd ytlingo
 
 [![Donate on DonatePay](https://img.shields.io/badge/Поддержать_проект-DonatePay-7c3aed?style=for-the-badge)](https://widget.donatepay.ru/widgets/page/f37569d679fedd41e646b89ec8af4187d833a500fea8a9a299e21811fc28f216?widget_id=7879740&sum=200)
 
-Страница доната: [DonatePay — виджет](https://widget.donatepay.ru/widgets/page/f37569d679fedd41e646b89ec8af4187d833a500fea8a9a299e21811fc28f216?widget_id=7879740&sum=200) (сумма по умолчанию 200 ₽)
+Страница доната: [DonatePay — виджет](https://widget.donatepay.ru/widgets/page/f37569d679fedd41e646b89ec8af4187d833a500fea8a9a299e21811fc28f216?widget_id=7879740&sum=200)
