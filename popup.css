@@ -1,0 +1,133 @@
+body {
+    width: 340px;
+    font-family: system-ui, -apple-system, sans-serif;
+    padding: 12px;
+    margin: 0;
+}
+
+h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 .count {
+    font-size: 12px;
+    color: #888;
+    font-weight: normal;
+}
+
+.lines-setting {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.lines-setting select {
+    padding: 4px 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#list {
+    height: 480px;          /* ~12-14 слов видно без скролла */
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.word-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 6px 6px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 13px;
+}
+
+.word-item:last-child {
+    border-bottom: none;
+}
+
+.word-text {
+    flex: 1;
+    min-width: 0;
+    word-break: break-word;
+    line-height: 1.35;
+}
+
+.translation {
+    color: #666;
+    font-size: 12px;
+}
+
+.delete-btn {
+    flex-shrink: 0;
+    background: transparent;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    transition: background 0.15s, color 0.15s;
+}
+
+.delete-btn:hover {
+    background: #ffe5e5;
+    color: #d33;
+}
+
+.empty {
+    color: #999;
+    font-size: 13px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer {
+    display: flex;
+    gap: 6px;
+}
+
+.footer button {
+    flex: 1;
+    padding: 7px 8px;
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f7f7f7;
+}
+
+.footer button:hover {
+    background: #eee;
+}
+
+.footer button.danger {
+    color: #c00;
+    border-color: #f0c0c0;
+}
+
+.footer button.danger:hover {
+    background: #ffe5e5;
+}
+
+body.window-mode {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 16px;
+}
+
+body.window-mode #list {
+    height: calc(100vh - 140px); /* растягиваем список на всё окно */
+}

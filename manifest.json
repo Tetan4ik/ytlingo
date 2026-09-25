@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "ytlingo",
+  "version": "1.0",
+  "description": "Субтитры YouTube с переводом, подсветка слов и личный словарь для изучения языка.",
+  "permissions": ["storage", "activeTab", "scripting", "windows"],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://translate.googleapis.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["page_script.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["inject.js", "popup.html", "popup.js", "popup.css"],
+      "matches": ["https://www.youtube.com/*"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Мой словарь"
+  }
+}

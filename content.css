@@ -1,0 +1,131 @@
+#movie_player #yt-lang-helper-box,
+.html5-video-player #yt-lang-helper-box {
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#yt-lang-helper-box {
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    max-width: 78%;
+    min-width: 320px;
+    text-align: center;
+    pointer-events: none;
+    font-family: system-ui, -apple-system, sans-serif;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    padding: 10px 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    transition: opacity 0.2s;
+}
+
+.yt-lang-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.yt-lang-nav-btn {
+    flex: 0 0 auto;
+    pointer-events: auto;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    line-height: 1;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.12);
+    transition: background 0.15s, opacity 0.15s;
+}
+
+.yt-lang-nav-btn:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.28);
+}
+
+.yt-lang-nav-btn:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
+#yt-lang-lines {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Одна строка субтитров */
+.yt-lang-line {
+    opacity: 0.45;
+    transition: opacity 0.2s;
+    line-height: 1.4;
+}
+
+/* Текущая строка — яркая */
+.yt-lang-line.current {
+    opacity: 1;
+}
+
+.yt-lang-original {
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+    pointer-events: auto;
+}
+
+.yt-lang-translated {
+    font-size: 15px;
+    color: #ffd54f;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+    margin-top: 2px;
+}
+
+/* Кликабельные слова */
+.yt-lang-word {
+    cursor: pointer;
+    padding: 0 2px;
+    border-radius: 3px;
+    transition: background 0.15s;
+}
+
+.yt-lang-word:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.yt-lang-line.current .yt-lang-word.speaking {
+    background: rgba(255, 235, 59, 0.95);
+    color: #111;
+    text-shadow: none;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
+/* Статус-индикатор */
+#yt-lang-helper-status {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.85);
+    color: #0f0;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    max-width: 280px;
+    pointer-events: none;
+    white-space: pre-wrap;
+    line-height: 1.3;
+}
+
+#yt-lang-helper-status.error { color: #f66; }
+#yt-lang-helper-status.warn  { color: #fc6; }
+#yt-lang-helper-status.ok    { color: #6f6; }
